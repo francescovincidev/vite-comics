@@ -3,7 +3,15 @@ export default {
     name: "FooterContacts",
     data() {
         return {
-            socialList: [`Follow us`, `F`,`T`,`YT`,`P`,`M`]
+            socialList: {
+                title: "Follow us",
+                socials:["footer-facebook.png", "footer-twitter.png", "footer-youtube.png","footer-pinterest.png","footer-periscope.png",]
+            }
+        }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
         }
     }
 }
@@ -18,8 +26,12 @@ export default {
             <div class="singup">sing-up now!</div>
             <div class="socials">
                 <ul>
-                    <li v-for="social in socialList">
-                        {{ social }}
+                    <li>
+                        {{ socialList.title }}
+                    </li>
+                    <li v-for="social in socialList.socials">
+                        <img :src="getImagePath(social)" alt="">
+
                     </li>
                 </ul>
             </div>
@@ -54,13 +66,20 @@ export default {
         .socials{
             ul{
                 @include flex(row, flex-start, center);
-                gap: 20px;
+                gap: 10px;
 
                 li:first-child {
                     font-size: 1rem;
                     font-weight: bolder;
                     color: $primary-blue;
+                    padding-right: 10px;
 
+                }
+
+                li{
+                    img{
+                        width: 25px;
+                    }
                 }
 
             }
