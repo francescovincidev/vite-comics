@@ -3,16 +3,17 @@ import AppHeaderMenu from "./components/AppHeaderMenu.vue"
 import BodyContent from "./components/BodyContent.vue"
 import BlueContent from "./components/BlueContent.vue"
 import FooterMain from "./components/FooterMain.vue"
-
-
-
+import FooterContacts from "./components/FooterContacts.vue"
 
 export default{
   components:{
     AppHeaderMenu,
     BodyContent,
     BlueContent,
-    FooterMain
+    FooterMain,
+    FooterContacts
+
+    
   }
 }
 
@@ -23,6 +24,8 @@ export default{
   <BodyContent />
   <BlueContent />
   <FooterMain />
+  <FooterContacts />
+
 
 </template>
 

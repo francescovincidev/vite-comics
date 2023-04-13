@@ -44,7 +44,7 @@ export default {
 
             </div>
 
-           
+
         </div>
 
     </div>
@@ -67,9 +67,9 @@ export default {
         @include flex(row, flex-start, flex-start);
         height: 100%;
         background-image: url("../assets/img/dc-logo-bg.png");
-            background-size: 50%;
-            background-repeat: no-repeat;
-            background-position: right;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
 
 
         .lists {
@@ -79,6 +79,7 @@ export default {
             gap: 20px;
             height: 400px;
             padding: 30px 0 50px;
+
             ul {
                 li {
                     padding: 5px 0;
@@ -88,6 +89,8 @@ export default {
                     font-size: 1rem;
                     font-weight: bolder;
                     padding: 5px 0;
+                    text-transform: uppercase;
+
                 }
             }
 
