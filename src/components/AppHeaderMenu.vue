@@ -97,7 +97,6 @@ export default {
         li {
             @include flex(row, space-between, center);
             position: relative;
-            list-style-type: none;
             height: 100px;
             width: 100%;
 

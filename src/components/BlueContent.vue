@@ -1,13 +1,11 @@
 <script>
 export default {
-    name: "BodyContent"
+    name: "BlueContent"
 }
 </script>
 
 <template>
-    <div class="body-content">
-        <div class="content">Contenuto</div>
-
+    <div class="blue-content">
 
     </div>
 </template>
@@ -16,9 +14,9 @@ export default {
 @use "../style/partials/mixins" as *;
 @use "../style/partials/variables" as *;
 
-.body-content{
+.blue-content{
     height: 100px;
-    background-color: black;
+    background-color: $primary-blue;
     color: white;
     @include flex(row, center, center);
     .content{

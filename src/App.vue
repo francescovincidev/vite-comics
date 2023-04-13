@@ -1,12 +1,18 @@
 <script>
 import AppHeaderMenu from "./components/AppHeaderMenu.vue"
 import BodyContent from "./components/BodyContent.vue"
+import BlueContent from "./components/BlueContent.vue"
+import FooterMain from "./components/FooterMain.vue"
+
+
 
 
 export default{
   components:{
     AppHeaderMenu,
-    BodyContent
+    BodyContent,
+    BlueContent,
+    FooterMain
   }
 }
 
@@ -15,6 +21,8 @@ export default{
 <template>
   <AppHeaderMenu />
   <BodyContent />
+  <BlueContent />
+  <FooterMain />
 
 </template>
 
