@@ -26,7 +26,7 @@ export default {
                 },
 
             ]
-            
+
         }
 
     },
@@ -58,7 +58,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .blue-content {
-    height: 100px;
+    padding: 35px 0;
     background-color: $primary-blue;
     color: white;
     @include flex(row, center, center);
@@ -70,15 +70,21 @@ export default {
         text-transform: uppercase;
 
 
+        @media screen and (max-width:600px) {
+            @include flex(column, stretch, stretch);
+            gap: 20px;
+        }
+
+
         div {
             @include flex(row, flex-start, center);
             gap: 10px;
             height: 100%;
             flex-shrink: 0;
-            
+
             img {
                 max-width: 50px;
-            max-height: 50px;
+                max-height: 50px;
             }
         }
 
